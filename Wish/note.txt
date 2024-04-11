@@ -60,4 +60,26 @@ if:跟C++大同小異
         **this會被代換成object_name
     name:回傳[object Object]
     name.Key:回傳Value
-        
+    name.Key4();:call function with object
+while:
+    ~
+    do{
+        document.write(aaa);
+        i++;
+    }while(i<5)
+    ~:會先執行do中的內容再判斷while是否正確
+for loop:跟C++大同小異
+class:物件模板
+    **通常模板名稱開頭字母會用大寫
+    ~class Phone{
+        constructor(V1,V2,V3){
+            this.number=V1;
+            this.year=V2;
+            this.is_waterproof=V3;
+        }
+        phone_age(){
+            return 2021- this.year;
+        }
+    }~:定義模板
+    var phone1=new Phone(v1,v2,v3);:以Phone模板進行宣告物件phone1
+    
