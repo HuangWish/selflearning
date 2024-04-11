@@ -1,3 +1,7 @@
+https://youtu.be/yZwlW5INhgk?si=phfHVCPYoAzxyzIe
+基本I/O:
+    var name = X:定義變數name並賦值X
+    document.write(XYZ):將()中內容直接print到HTML上
 字串:
     name.length():回傳字串長度
     name.toUpperCace():回傳全部變大寫的字串
@@ -25,4 +29,35 @@ data type conversion:
     parseFloat(V):回傳V轉換為Float後的值
     parseInt(V):回傳V轉換為Int後的值
 array:
-    
+    var name = [80,66,55,7789]:initialization
+    name[X] = Y:將第X位的值改為Y
+    name[X] = Y:將第X位的值改為Y
+    name[X] = Y:將第X位的值改為Y
+    name.length:回傳array的長度
+!!!function:
+    ~
+    function name(X,Y){
+        document.write(X+Y);
+    };
+    ~:定義函數
+        **X,Y為傳入值
+    name(X,Y);:call function並傳入X,Y
+    **運行到return就會自動break
+    **return值會取代原本的呼叫式
+if:跟C++大同小異
+!!!!!!!object:key(鍵)配對value(值)(資料配對=dictionary???)
+    ~
+    var name ={
+        Key1:Value1,
+        Key2:Value2,
+        Key3:Value3,
+        Key4:function(){
+            document.write(this.name)
+        }
+    };
+    ~:initialization
+        **Key可為function
+        **this會被代換成object_name
+    name:回傳[object Object]
+    name.Key:回傳Value
+        
