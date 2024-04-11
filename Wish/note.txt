@@ -1,0 +1,28 @@
+字串:
+    name.length():回傳字串長度
+    name.toUpperCace():回傳全部變大寫的字串
+    name.toLowerCace():回傳全部變小寫的字串
+    name.charAt(X):回傳第X位的字元
+        **第一個數字為0
+    name.indexOf("X"):回傳字元X第一次出現在第幾位
+        **第一個數字為0
+        **沒出現的字元會回傳-1
+    name.substring(X,Y):回傳第X到第Y-1位的字串內容
+數字:
+    **有先乘除後加減
+    **V=Variable
+    Math.abs(V):回傳V的絕對值
+    Math.max(1,2,3,4,5,66,777):回傳數列的最大值
+    Math.min(1,2,3,4,5,66,777):回傳數列的最小值
+    Math.round(V):回傳四捨五入到整數的V
+    Math.pow(X,Y):回傳X的Y次方
+    Math.sqrt(V):回傳V的二次方根
+    Math.random():回傳0到1之間的一個隨機數
+input:
+    prompt("請輸入值")
+        **回傳值default為字串
+data type conversion:
+    parseFloat(V):回傳V轉換為Float後的值
+    parseInt(V):回傳V轉換為Int後的值
+array:
+    
