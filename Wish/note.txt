@@ -82,4 +82,12 @@ class:物件模板
         }
     }~:定義模板
     var phone1=new Phone(v1,v2,v3);:以Phone模板進行宣告物件phone1
-    
+物件:
+    **所有的物件都是隸屬於window(全域物件)下的物件
+取得html內的元素:
+    document.getElementById("id_name")
+event listener:事件監聽器
+    onclick="function":當被點擊時 執行function函式
+編輯標籤:
+    tags.innerText="";:更改標籤內文字
+    tags.style.color="red";:更改標籤樣式-顏色

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plot Function</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    canvas {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+<script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    const minX = -1.5;
+    const maxX = 1.5;
+    const minY = -1.5;
+    const maxY = 1.5;
+    const step = 0.01;
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    function plotFunction() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.strokeStyle = 'red';
+
+        for (let x = minX; x <= maxX; x += step) {
+            let y1 = Math.pow(1 - Math.pow(Math.abs(x), 10 / 13), 1/2);
+            let y2 = -y1;
+
+            let screenX = (x - minX) / (maxX - minX) * canvas.width;
+            let screenY1 = canvas.height - (y1 - minY) / (maxY - minY) * canvas.height;
+            let screenY2 = canvas.height - (y2 - minY) / (maxY - minY) * canvas.height;
+
+            if (isNaN(y1)) {
+                ctx.moveTo(screenX, 0);
+                ctx.lineTo(screenX, canvas.height);
+            } else {
+                ctx.moveTo(screenX, screenY1);
+                ctx.lineTo(screenX, screenY2);
+            }
+        }
+
+        ctx.stroke();
+        ctx.closePath();
+    }
+
+    plotFunction();
+</script>
+</body>
+</html>
